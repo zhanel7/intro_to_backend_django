@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список статей</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .article { margin: 10px; padding: 10px; border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <h1>Список статей</h1>
+    {% for article in articles %}
+        <div class="article">
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.text }}</p>
+            <p><strong>Автор:</strong> {{ article.author }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>

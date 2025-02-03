@@ -1,9 +1,3 @@
-from django.http import JsonResponse
-from .models import Movie
-
-def movie_list(request):
-    movies = list(Movie.objects.values())
-    return JsonResponse(movies, safe=False)
 
 def movie_detail(request, id):
     try:
@@ -11,3 +5,10 @@ def movie_detail(request, id):
         return JsonResponse({"title": movie.title, "description": movie.description, "producer": movie.producer, "duration": movie.duration})
     except Movie.DoesNotExist:
         return JsonResponse({"error": "Movie not found"}, status=404)
+    from django.shortcuts import render
+    from .models import Movie
+    
+    def movie_list(request):
+        movies = Movie.objects.all()
+        return render(request, "movies.html", {"movies": movies})
+
