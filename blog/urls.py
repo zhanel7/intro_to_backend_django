@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import article_list, article_detail
+from .views import article_list, article_detail, article_list_page  # Импортируем новую вьюху
 
 urlpatterns = [
-    path('articles/', article_list),
-    path('articles/<int:id>/', article_detail),
+    path('articles/', article_list, name="article_list_api"),  # API (JSON)
+    path('articles/<int:id>/', article_detail, name="article_detail_api"),  # API (JSON)
+    path('articles/page/', article_list_page, name="article_list_page"),  # HTML-страница
 ]
