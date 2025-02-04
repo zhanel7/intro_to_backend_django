@@ -1,7 +1,14 @@
 from django.urls import path
-from .views import book_list, book_detail
+from .views import BookList, BookDetail
 
 urlpatterns = [
-    path('books/', book_list),
-    path('books/<int:book_id>/', book_detail),
+    path('books/', BookList.as_view(), name='book-list'),
+    path('books/<int:id>/', BookDetail.as_view(), name='book-detail'),
+]
+
+from book import views as book_views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('books/', book_views.book_list_page),  # Для отображения списка книг
 ]
