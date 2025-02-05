@@ -1,5 +1,5 @@
 """
-URL configuration for cw_3 project.
+URL configuration for intro_to_backend_django project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -16,10 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from cw_3.book import views as book_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('books/', book_views.book_list),  # Список всех книг
-    path('books/<int:id>/', book_views.book_detail),  # Информация о конкретной книге
 ]
