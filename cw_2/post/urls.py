@@ -1,9 +1,9 @@
-from django import path
-from .import views
+from django.urls import path
+from .views import post_list, post_detail, post_create, post_delete
 
 urlpatterns = [
-	path('posts/', views.post_list, name='post_list'),
-	path('posts/<int:id>/', views.post_detail, name='post_detail'),
-	path('posts/new/', views.post_create, name='post_create'),
-	path('posts/<int:id>/delete/', views.post_delete, name='post_delete'),
+    path('', post_list, name='post-list'),  # GET posts/
+    path('<int:id>/', post_detail, name='post-detail'),  # GET posts/:id
+    path('create/', post_create, name='post-create'),  # POST posts/
+    path('<int:id>/delete/', post_delete, name='post-delete'),  # DELETE posts/:id/delete
 ]

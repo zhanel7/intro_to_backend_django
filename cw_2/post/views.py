@@ -3,45 +3,32 @@ from django.http import JsonResponse
 from .models import Post
 from .forms import PostForm
 
+# Получение всех постов
 def post_list(request):
-    posts = Post.objects.all()
-    return JsonResponse({"posts": list(posts.values())})
+    posts = list(Post.objects.values())
+    return JsonResponse(posts, safe=False, json_dumps_params={'ensure_ascii': False})
 
+# Получение одного поста по ID
 def post_detail(request, id):
     post = get_object_or_404(Post, id=id)
-    return JsonResponse({"post": {"title": post.title, "description": post.description, "author": post.author}})
+    return JsonResponse(
+        {"title": post.title, "description": post.description, "author": post.author},
+        json_dumps_params={'ensure_ascii': False}
+    )
 
+# Создание поста
 def post_create(request):
-    if request.method == "POST":
+    if request.method == 'POST':
         form = PostForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/posts/')
+            return JsonResponse({"message": "Post created successfully!"}, status=201)
     else:
         form = PostForm()
     return render(request, 'post/post_form.html', {'form': form})
 
+# Удаление поста
 def post_delete(request, id):
     post = get_object_or_404(Post, id=id)
     post.delete()
-    return redirect('/posts/')
-
-# 9. Добавьте маршруты в post/urls.py
-from django.urls import path
-from . import views
-
-urlpatterns = [
-    path('posts/', views.post_list, name='post_list'),
-    path('posts/<int:id>/', views.post_detail, name='post_detail'),
-    path('posts/new/', views.post_create, name='post_create'),
-    path('posts/<int:id>/delete/', views.post_delete, name='post_delete'),
-]
-
-# 10. Подключите маршруты в cw_2/urls.py
-from django.contrib import admin
-from django.urls import path, include
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('post.urls')),
-]
+    return redirect('/todos')  # Перенаправление после удаления
