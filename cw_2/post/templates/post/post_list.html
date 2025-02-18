@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список постов</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
+        h1 { color: #333; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 10px; margin: 10px 0; background: #f9f9f9; border-radius: 5px; }
+        a { text-decoration: none; color: #007bff; }
+        .delete-btn { color: red; margin-left: 10px; }
+        .add-btn { display: inline-block; margin-top: 20px; padding: 10px; background: #28a745; color: white; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Список постов</h1>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <a href="{% url 'post_detail' post.id %}">{{ post.title }}</a>
+                <a class="delete-btn" href="{% url 'post_delete' post.id %}">Удалить</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a class="add-btn" href="{% url 'post_create' %}">Добавить новый пост</a>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'todos/base.html' %}
+{% block content %}
+<h1>Todo Lists</h1>
+
+{% for todo_list in todo_lists %}
+    <div>{{ todo_list.title }}</div>
+    <a href="{% url 'todo_list_detail' todo_list.id %}">View</a>
+{% endfor %}
+
+<!-- Форма для создания нового TodoList -->
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Create Todo List</button>
+</form>
+{% endblock %}
