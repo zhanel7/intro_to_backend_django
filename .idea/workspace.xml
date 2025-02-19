@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62d3f068-3c28-4a6b-b6d5-5258af44d4d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../desktop.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../~$дулда Асылжан.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_1/hw_3/hw_3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_1/hw_3/hw_3/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_1/hw_3/todos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_1/hw_3/todos/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_1/hw_3/todos/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_1/hw_3/todos/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_1/hw_3/todos/templates/todos/create_todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/cw_1/hw_3/todos/templates/todos/create_todo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_1/hw_3/todos/templates/todos/todo_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/cw_1/hw_3/todos/templates/todos/todo_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_1/hw_3/todos/templates/todos/todo_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/cw_1/hw_3/todos/templates/todos/todo_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_1/hw_3/todos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_1/hw_3/todos/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_1/hw_3/todos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_1/hw_3/todos/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_1/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_1/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_2/cw_2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_2/cw_2/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/cw_2/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_2/post/templates/post/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/cw_2/post/templates/post/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_2/post/templates/post/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/cw_2/post/templates/post/post_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_2/post/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_2/post/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_2/post/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_2/post/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_3/cw_3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_3/cw_3/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_3/cw_3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_3/cw_3/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_3/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/cw_3/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_3/post/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_3/post/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_3/post/templates/post/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/cw_3/post/templates/post/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_3/post/templates/post/thread_detai.html" beforeDir="false" afterPath="$PROJECT_DIR$/cw_3/post/templates/post/thread_detai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_3/post/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_3/post/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw_3/post/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cw_3/post/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_3/todos/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw_3/todos/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_3/todos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw_3/todos/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_3/todos/templates/todos/create_todo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_3/todos/templates/todos/todo_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_3/todos/templates/todos/todo_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/hw_3/todos/templates/todos/todo_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_3/todos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw_3/todos/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_3/todos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw_3/todos/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ry7I8jXT2jLLNnlUDxxki5Tq8r" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ACER-2024/Documents/hw_1&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER-2024\Documents\intro_to_backend_django\hw_3" />
+      <recent name="C:\Users\ACER-2024\Documents\intro_to_backend_django\intro_to_backend_django\intro_to_backend_django" />
+      <recent name="C:\Users\ACER-2024\Documents\intro_to_backend_django" />
+      <recent name="C:\Users\ACER-2024\Documents\intro_to_backend_django\hw-2" />
+      <recent name="C:\Users\ACER-2024\Documents\intro_to_backend_django\cw_3" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="ShConfigurationType" nameIsGenerated="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="powershell.exe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs>
+        <env name="DJANGO_SETTINGS_MODULE" value="cw_3.settings" />
+      </envs>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62d3f068-3c28-4a6b-b6d5-5258af44d4d1" name="Changes" comment="" />
+      <created>1737519379130</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737519379130</updated>
+    </task>
+    <servers />
+  </component>
+</project>
