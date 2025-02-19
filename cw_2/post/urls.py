@@ -1,9 +1,10 @@
 from django.urls import path
-from .views import post_list, post_detail, post_create, post_delete
+from . import views  # Убеждаемся, что импортируем views из текущего приложения
 
 urlpatterns = [
-    path('', post_list, name='post_list'),
-    path('<int:post_id>/', post_detail, name='post_detail'),
-    path('create/', post_create, name='post_create'),
-    path('<int:post_id>/delete/', post_delete, name='post_delete'),
+    path('', views.post_list, name='post_list'),
+    path('<int:id>/', views.post_detail, name='post_detail'),
+    path('new/', views.post_create, name='post_create'),
+    path('<int:id>/edit/', views.post_edit, name='post_edit'),
+    path('<int:id>/delete/', views.post_delete, name='post_delete'),
 ]

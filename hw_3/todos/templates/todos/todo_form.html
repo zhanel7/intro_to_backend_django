@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Добавить задачу</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 </head>
-<body class="container mt-5">
-    <h1 class="text-center">Добавить задачу</h1>
-    <form method="post" class="card p-4 shadow-sm">
+<body>
+    <h1>Добавить задачу</h1>
+    <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="btn btn-success">Сохранить</button>
-        <a href="{% url 'todo_list' %}" class="btn btn-secondary">Назад</a>
+        <button type="submit">Сохранить</button>
     </form>
+    <a href="{% url 'todo_list' %}">Назад к списку</a>
 </body>
 </html>

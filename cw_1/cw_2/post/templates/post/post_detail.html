@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.title }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
+        h1 { color: #333; }
+        p { font-size: 18px; }
+        .back-btn { display: inline-block; margin-top: 20px; padding: 10px; background: #007bff; color: white; border-radius: 5px; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.description }}</p>
+    <p><strong>Автор:</strong> {{ post.author }}</p>
+    <a class="back-btn" href="{% url 'post_list' %}">Назад</a>
+</body>
+</html>

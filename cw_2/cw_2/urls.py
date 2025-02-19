@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('post.urls')),  # <-- Подключаем наше API
+    path('posts/', include('post.urls')),  # Теперь все пути будут начинаться с "posts/"
 ]

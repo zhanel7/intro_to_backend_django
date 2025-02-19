@@ -1,13 +1,8 @@
 from django.urls import path
-from .views import todo_list_view, create_todo, delete_todo, TodoListView, TodoDetailView
+from .views import todo_list, todo_create, todo_delete
 
 urlpatterns = [
-    # HTML-страницы
-    path('', todo_list_view, name='todo_list'),
-    path('create/', create_todo, name='create_todo'),
-    path('<int:id>/delete/', delete_todo, name='delete_todo'),
-
-    # API эндпоинты
-    path('api/todos/', TodoListView.as_view(), name='api_todos'),
-    path('api/todos/<int:pk>/', TodoDetailView.as_view(), name='api_todo_detail'),
+    path('', todo_list, name='todo_list'),
+    path('create/', todo_create, name='todo_create'),
+    path('delete/<int:pk>/', todo_delete, name='todo_delete'),
 ]
