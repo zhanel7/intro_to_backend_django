@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Список бронирований</h2>
+<a href="{% url 'reservation-create' %}">Добавить бронирование</a>
+<ul>
+    {% for reservation in reservations %}
+        <li>
+            <a href="{% url 'reservation-detail' reservation.id %}">Бронь #{{ reservation.id }}</a> -
+            Стол #{{ reservation.table.id }}, {{ reservation.date }} в {{ reservation.time }}
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

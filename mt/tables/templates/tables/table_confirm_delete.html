@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Удалить стол #{{ table.id }}?</h2>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Удалить</button>
+</form>
+<a href="{% url 'table-list' %}">Отмена</a>
+{% endblock %}

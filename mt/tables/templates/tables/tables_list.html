@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Список столов</h2>
+<a href="{% url 'table-create' %}">Добавить стол</a>
+<ul>
+    {% for table in tables %}
+        <li>
+            <a href="{% url 'table-detail' table.id %}">Стол #{{ table.id }}</a> - {{ table.capacity }} мест
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
