@@ -1,0 +1,19 @@
+{% extends 'todos/base.html' %}
+
+{% block title %}Add Todo{% endblock %}
+
+{% block content %}
+<div class="card mx-auto mt-5" style="max-width: 400px;">
+    <div class="card-body">
+        <h3 class="text-center">Add New Task</h3>
+        <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label">Task Title:</label>
+                <input type="text" name="title" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Add Task</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

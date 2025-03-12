@@ -1,0 +1,12 @@
+{% extends "todos/base.html" %}
+
+{% block content %}
+    <h2>Task Details</h2>
+    <p><strong>Title:</strong> {{ todo.title }}</p>
+    <p><strong>Description:</strong> {{ todo.description }}</p>
+    <p><strong>Created:</strong> {{ todo.created_at }}</p>
+    <p><strong>Due Date:</strong> {{ todo.due_date|default:"Not set" }}</p>  <!-- Добавили вывод срока -->
+    <p><strong>Status:</strong> {% if todo.completed %}✅ Done{% else %}❌ Pending{% endif %}</p>
+
+    <a href="{% url 'todo_list' %}">Back to List</a>
+{% endblock %}

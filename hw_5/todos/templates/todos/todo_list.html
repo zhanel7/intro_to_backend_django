@@ -1,0 +1,42 @@
+{% extends 'todos/base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="text-center">Your Todo List</h2>
+    <a href="{% url 'todo_add' %}" class="btn btn-success mb-3">Add New Task</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Created</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for todo in todos %}
+            <tr>
+                <td>{{ todo.title }}</td>
+                <td>{{ todo.description }}</td>
+                <td>{{ todo.created_at|date:"d M Y" }}</td>
+                <td>{{ todo.due_date|date:"d M Y" }}</td>
+                <td>
+                    {% if todo.is_completed %}
+                        <span class="badge bg-success">✔ Done</span>
+                    {% else %}
+                        <span class="badge bg-danger">✘ Pending</span>
+                    {% endif %}
+                </td>
+                <td>
+                    <a href="{% url 'todo_detail' todo.id %}" class="btn btn-info btn-sm">Details</a>
+                    <a href="{% url 'todo_edit' todo.id %}" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="{% url 'todo_delete' todo.id %}" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
